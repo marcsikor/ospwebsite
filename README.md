@@ -1,2 +1,2 @@
-# ospwebsite
-website for our voluntary fire dept
+# OSP Website
+Website for our Volunteer Fire Department
