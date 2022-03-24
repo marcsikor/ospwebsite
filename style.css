@@ -7,6 +7,13 @@ html {
 	font-family: 'Lato', sans-serif;
 }
 
+.card-img-top {
+	margin-top: 5%;
+	max-width: 100px;
+	height: auto;
+	text-align: center;
+}
+
 h1 {
 	font-size: 6vmin;
 }
@@ -83,6 +90,10 @@ h3 {
 	color: black;
 }
 
+.card{
+  margin-bottom: 5%;
+}
+
 @media screen and (min-width: 768px) {
 	.logo {
 		padding-top: 5vmin;
@@ -128,8 +139,30 @@ h3 {
 	}
 }
 
-@media screen and (max-width: 768px) and (max-height: 768px) {
+@media screen and (max-width: 768px) and (max-height: 700px) {
+	/* .breakpoint {
+		display: none;
+	} */
+	.btn {
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		margin: 10px;
+		font-size: 100%;
+	}
+}
+
+@media screen and (max-width: 768px) and (max-height: 600px) {
 	.breakpoint {
 		display: none;
+	}
+	.btn {
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		margin: 10px;
+		font-size: 100%;
 	}
 }
