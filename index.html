@@ -79,7 +79,6 @@
 
     <div class="content">
         <section id="onas">
-
             <p>
                 <h2 class="section-header">O nas</h2>
                 <hr>
@@ -145,25 +144,21 @@
                     <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="4" aria-label="Slide 5"></button>
                 </div>
                 <p>
-                    <h3>Galeria</h3>
+                    <h3>Zdjęcia</h3>
                 </p>
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
+                    <div class="carousel-item active" data-bs-interval="3000">
                         <img src="historia1.jpg" class="d-block w-100" alt="tu">
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item" data-bs-interval="3000">
                         <img src="historia2.jpg" class="d-block w-100" alt="będzie">
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item" data-bs-interval="3000">
                         <img src="historia3.jpg" class="d-block w-100" alt="galeria z niżej">
                     </div>
-                    <div class="carousel-item">
-                        <img src="historia4.jpg" class="d-block w-100" alt="czemu">
-                    </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item" data-bs-interval="3000">
                         <img src="historia5.jpg" class="d-block w-100" alt="teraz działa">
                     </div>
                 </div>
@@ -271,13 +266,13 @@
                   <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2" aria-label="Slide 3"></button>
               </div>
               <div class="carousel-inner">
-                  <div class="carousel-item active">
+                  <div class="carousel-item active" data-bs-interval="3000">
                       <img src="volvo/volvo1.gif" class="d-block w-100" alt="tu będą">
                   </div>
-                  <div class="carousel-item">
+                  <div class="carousel-item" data-bs-interval="3000" >
                       <img src="volvo/volvo2.gif" class="d-block w-100" alt="zdjęcia">
                   </div>
-                  <div class="carousel-item">
+                  <div class="carousel-item" data-bs-interval="3000">
                       <img src="volvo/volvo3.gif" class="d-block w-100" alt="volvo">
                   </div>
               </div>
@@ -361,13 +356,13 @@
                     <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
+                    <div class="carousel-item active" data-bs-interval="3000">
                         <img src="fiat1.jpg" class="d-block w-100" alt="tu będą">
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item" data-bs-interval="3000">
                         <img src="fiat2.jpg" class="d-block w-100" alt="zdjęcia">
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item" data-bs-interval="3000">
                         <img src="fiat3.jpg" class="d-block w-100" alt="ducato">
                     </div>
                 </div>
@@ -555,6 +550,7 @@
       
             // Get the navbar
             var navbar = document.getElementById("navbar");
+            var content = document.getElementsByClassName("content");
       
             // Get the offset position of the navbar
             var sticky = navbar.offsetTop;
@@ -562,9 +558,11 @@
             // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
             function myFunction() {
               if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
+                navbar.classList.add("sticky");
+                content[0].classList.add("newcontent");
               } else {
                 navbar.classList.remove("sticky");
+                content[0].classList.remove("newcontent");
               }
             }
         </script>

@@ -55,9 +55,12 @@ h1 {
 
 .content {
 	text-align: justify;
-	margin: 10%;
+	margin-top: 40px;
 }
 
+.newcontent {
+	margin-top: 94.8px;
+}
 .nav-link {
 	color: rgb(148, 38, 38);
 	font-size: 120%;
@@ -105,19 +108,19 @@ h3 {
 		padding-bottom: 2vmin;
 		padding-top: 2vmin;
 	}
+	.content{
+		margin: 25vmin;
+		
+	}
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 844px) {
 	.logo {
 		padding: 2vh;
 		max-width: 20vh;
 		height: auto;
 	}
-	.row {
-		margin: 0;
-		padding: 0;
-		border: 0;
-	}
+
 	.card {
 		margin-bottom: 2vmin;
 		margin-top: 2vmin;
@@ -132,17 +135,22 @@ h3 {
 		line-height: 1;
 	}
 	.section-header {
-		padding-top: 20%;
+		text-align: center;
+		margin-top: 10%;
 	}
 	.breakpoint2 {
 		display: none;
 	}
+	.content{
+		margin: 10vmin;
+	}
 }
 
 @media screen and (max-width: 768px) and (max-height: 768px) {
-	/* .breakpoint {
-		display: none;
-	} */
+	.row {
+		padding-bottom: 0;
+		padding-top: 0;
+	}
 	.btn {
 		padding-left: 20px;
 		padding-right: 20px;
