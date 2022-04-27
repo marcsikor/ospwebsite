@@ -546,23 +546,20 @@
             </footer>
         </div>
         <script>
-            //Copied from W3Schools?
     
-            // When the user scrolls the page, execute myFunction
             window.onscroll = function() {myFunction()};
       
-            // Get the navbar
             var navbar = document.getElementById("navbar");
-            var content = document.getElementsByClassName("content");
+            var content = document.getElementsByClassName("content"); 
             
-            // Get the offset position of the navbar
+            // Get the initial offset position of the navbar 
             var sticky = navbar.offsetTop;
       
-            // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+            // Add the bootstrap fixed-top class to the navbar and the padding (check newcontent in css file) when you reach its scroll position.
             function myFunction() {
               if (window.pageYOffset >= sticky) {
                 navbar.classList.add("fixed-top");
-                content[0].classList.add("newcontent");
+                content[0].classList.add("newcontent"); 
               } else {
                 navbar.classList.remove("fixed-top");
                 content[0].classList.remove("newcontent");
@@ -570,7 +567,7 @@
               }
             }
             $(window).resize(function() {
-                sticky = content.offsetTop; // get the value of the content when changing screen size - responsive
+                sticky = content.offsetTop; // get the value of the content when changing screen size
             })
         </script>
 </body>
