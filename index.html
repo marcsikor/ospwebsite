@@ -437,7 +437,6 @@
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne3" aria-expanded="false" aria-controls="flush-collapseOne3" id=git "#accordionFlushExample3">
               Szczegóły
             </button>
-            </h2>
             <div id="flush-collapseOne3" class="accordion-collapse collapse" aria-labelledby="flush-headingOne3" data-bs-parent="#accordionFlushExample3">
                 <div class="accordion-body">
                     <ul class="list-group list-group-flush">
@@ -503,7 +502,57 @@
                     <div style="text-align: center; margin-top:5%;"><a type="button" class="btn btn-lg btn-outline-danger" style="text-align: center;" href="przetarg_gba/ogl_o_zam.pdf">Ogłoszenie o udzieleniu zamówienia</a></div>
                 </div>
             </div>
-
+            
+            <!-- <p>Informacja o zrealizowaniu zadania współfinansowanego ze środków <strong>Funduszu Ochrony Środowiska i Gospodarki Wodnej w Krakowie</strong></p>
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne4" aria-expanded="false" aria-controls="flush-collapseOne4" id=git "#accordionFlushExample4">
+                Szczegóły
+            </button>
+            <div id="flush-collapseOne4" class="accordion-collapse collapse" aria-labelledby="flush-headingOne4" data-bs-parent="#accordionFlushExample4">
+                <div class="accordion-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <p><strong>Realizujemy zadanie sfinansowane ze środków udostępnionych
+                                przez Narodowego Funduszu Ochrony Środowiska i Gospodarki Wodnej we
+                                współpracy z Wojewódzkim Funduszem Ochrony Środowiska i Gospodarki
+                                Wodnej w Krakowie</strong></p>
+                            <div class="row">
+                                <div class="col-md">
+                                    <a href="www.wfos.krakow.pl"><img src="wfos-logo.png" style="text-align: center;" alt="wfos"></a><br>
+                                </div>
+                                <div class="col-md">
+                                    <a href="www.nfosigw.gov.pl"><img src="ngosigw-logo.png" style="text-align: center;" alt="nfos"></a><br>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <p><strong>Nazwa zadania</strong></p>
+                            Ogólnopolski program finansowania służb ratowniczych. Część 2) Dofinansowanie zakupu sprzętu i wyposażenie jednostek ochotniczych straży pożarnych
+                        </li>
+                        <li class="list-group-item">
+                            <p><strong>Koszt kwalifikowany zadania</strong></p>
+                            10.690 zł
+                        </li>
+                        <li class="list-group-item">
+                            <p><strong>Kwota dotacji</strong></p>
+                            4.533 zł
+                        </li>
+                        <li class="list-group-item">
+                            <p><strong>Dotujący</strong></p>
+                            <div class="row">
+                                <div class="col-md">
+                                    <p>Wojewódzki Fundusz Ochrony Środowiska i Gospodarki Wodnej</p>
+                                    <a href="www.wfos.krakow.pl"><img src="wfos-logo.png" style="text-align: center;" alt="wfos"></a><br>
+                                </div>
+                                <div class="col-md">
+                                    <p>Narodowy Fundusz Ochrony Środowiska i Gospodarki Wodnej</p>
+                                    <a href="www.nfosigw.gov.pl"><img src="ngosigw-logo.png" style="text-align: center;" alt="nfos"></a><br>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+                         -->
         </section>
         
         <section id="kontakt">
@@ -546,20 +595,23 @@
             </footer>
         </div>
         <script>
+            //Copied from W3Schools?
     
+            // When the user scrolls the page, execute myFunction
             window.onscroll = function() {myFunction()};
       
+            // Get the navbar
             var navbar = document.getElementById("navbar");
-            var content = document.getElementsByClassName("content"); 
+            var content = document.getElementsByClassName("content");
             
-            // Get the initial offset position of the navbar 
+            // Get the offset position of the navbar
             var sticky = navbar.offsetTop;
       
-            // Add the bootstrap fixed-top class to the navbar and the padding (check newcontent in css file) when you reach its scroll position.
+            // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
             function myFunction() {
               if (window.pageYOffset >= sticky) {
                 navbar.classList.add("fixed-top");
-                content[0].classList.add("newcontent"); 
+                content[0].classList.add("newcontent");
               } else {
                 navbar.classList.remove("fixed-top");
                 content[0].classList.remove("newcontent");
@@ -567,7 +619,7 @@
               }
             }
             $(window).resize(function() {
-                sticky = content.offsetTop; // get the value of the content when changing screen size
+                sticky = content.offsetTop; // get the value of the content when changing screen size - responsive
             })
         </script>
 </body>
